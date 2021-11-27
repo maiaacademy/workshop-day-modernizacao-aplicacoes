@@ -8,7 +8,7 @@ Modernize a Legacy On-premises Application (Aplication, Database and Serverless)
 
 Parts Unlimited's E-Commerce website
 
-   ![Screenshot of the App Modernization](/AllFiles/Images/MAC-Newtires.png)
+   ![Screenshot of the App Modernization](/AllFiles/Images/PartsUnlimited.png)
 
 ## Requirements Hands-on Lab
 
