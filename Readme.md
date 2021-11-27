@@ -209,7 +209,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 6. On the **Options** screen, ensure **Check database compatibility (1)** and **Check feature parity (1)** are both checked, and then select **Next (2)**.
 
 7. On the **Sources** screen, select **Add sources**.
-8. 
+
 9. Enter the following into the **Connect to a server** dialog that appears on the right-hand side:
 
     - **Server name (1)**: Enter **SQLSERVER2008**.
