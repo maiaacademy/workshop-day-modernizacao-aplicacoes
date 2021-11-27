@@ -6,15 +6,15 @@ Mentoria Arquiteto Cloud - Hands-on Lab
 
 Modernize a Legacy On-premises Application (Aplication, Database and Serverless)
 
-Parts Unlimited's E-Commerce website
+**Parts Unlimited's E-Commerce website**
 
    ![Screenshot of the App Modernization](/AllFiles/Images/PartsUnlimited.png)
 
-## Requirements Hands-on Lab
+## Requirements Hands-on lab
 
-- Microsoft Azure subscription must be pay-as-you-go or MSDN.
+- An active Microsoft Azure subscription in preference be Pay-as-you-go or MSDN.
   - **Important:** To complete this lab, you must have sufficient rights within your Azure AD tenant to register resource providers in your Azure Subscription.
-- An active [GitHub Account](https://github.com).
+- An active [GitHub Account](https://github.com) in Free or Pay plans.
 
 1. In the [Azure portal](https://portal.azure.com), select **Resource groups** from the Azure services list.
 
@@ -40,7 +40,7 @@ Parts Unlimited's E-Commerce website
 
 3. It can take a couple of minutes for the registration to complete. Make sure you see the status of **Registered** before moving on. You may need to select **Refresh** to see the updated status.
 
-## Deploy Application Architecture
+## Deploy Application Architecture (30 minutes)
 
 1. To run the ARM template deployment, select the **Deploy to Azure** button below, which opens a custom deployment screen in the Azure portal. The resources created by the ARM template include:
 
@@ -54,7 +54,7 @@ Parts Unlimited's E-Commerce website
   - SQL Server Management Studio
   - Git Tools
   - Visual Studio Code installed and configured
-- A SQL Server 2008 R2 VM with the Microsoft Data Migration Assistant (DMA) installed and configured to work with Parts Unlimited E-Commerce site.
+- A SQL Server 2008 R2 VM with the Microsoft Data Migration Assistant (DMA).
 - Azure SQL Database
 - Azure Database Migration Service (DMS)
 - Azure App Service Plan
@@ -182,7 +182,7 @@ Parts Unlimited's E-Commerce website
     - Select the **Refresh** button.
     - View the assessed and migrated websites. Keep in mind that you might need to wait for 5 to 10 minutes for results to show up.
 
-## Modernization Database (60 minutes)
+## Modernization Database (90 minutes)
 
 ### Perform Assessment for Migration to Azure SQL Database
 
@@ -245,7 +245,7 @@ Parts Unlimited's E-Commerce website
 
 ### Retrieve Connection information for SQL Databases
 
-1. In the [Azure portal](https://portal.azure.com), navigate to your **SqlServer2008-ip** resource by selecting **Resource groups** from the Azure services list, selecting the **RG-RG-MAC-AppModern** resource group, and selecting the **SqlServer2008-ip** Public IP address from the list of resources.
+1. In the [Azure portal](https://portal.azure.com), navigate to your **SqlServer2008-ip** resource by selecting **Resource groups** from the Azure services list, selecting the **RG-MAC-AppModern** resource group, and selecting the **SqlServer2008-ip** Public IP address from the list of resources.
 
 2. In the **Overview** blade, select **Copy** to copy the public IP address and paste the value into a text editor, such as Notepad.exe, for later reference.
 
@@ -405,7 +405,7 @@ Parts Unlimited's E-Commerce website
 
 9. Switch to the **Overview (1)** blade, and select **URL (2)** to navigate to the Parts Unlimited website hosted in our Azure App Service using Azure SQL Database.
 
-## Deploy CI/CD Pipeline with Github Actions for the Application
+## Deploy CI/CD Pipeline with Github Actions for the Application (60 minutes)
 
 ### Moving the codebase to a GitHub repo
 
@@ -520,8 +520,6 @@ Parts Unlimited's E-Commerce website
 
 12. Open the `stagingdeploy.yml` in Visual Studio Code. Replace the suffix value on lines 7 and 11 to match your lab.
 
-    ![YML file is displayed with the suffix values highlighted.](media/ymlreplacesuffix.png "YML file")
-
 13. You have just updated the `partsunlimited` GitHub project. It is time to save and push your changes. Execute these commands in a Web VM Command window.
 
     ```cmd
@@ -576,7 +574,7 @@ Parts Unlimited's E-Commerce website
     > To run a CI/CD workflow manually, go to GitHub actions page **(1)** in your repository. Select the workflow **(2)** to run. Open the **Run workflow (3)** menu and select **Run workflow (4)**.
     >
 
-## Using Serverless to Proceded orders
+## Deploy Serverless to Proceded orders (60 minutes)
 
 1. Connect to your WebVM VM with RDP.
 
@@ -679,9 +677,9 @@ Parts Unlimited's E-Commerce website
 
    > While having Live Metric up, try submitting a new order on the Parts Unlimited website. You will see access to blob storage in the telemetry to upload the PDF **(2)** and execution count on the graph **(3)**.
 
-## After the Hands-on lab
+## After the Hands-on Lab
 
-1. De-provision all Azure resources created in support of this hands-on lab.
+1. Delete all Azure resources created in support of this Hands-on lab.
 
 1. End of **Workshop Day**
 
