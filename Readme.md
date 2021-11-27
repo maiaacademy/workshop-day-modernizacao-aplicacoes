@@ -405,7 +405,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 
 9. Switch to the **Overview (1)** blade, and select **URL (2)** to navigate to the Parts Unlimited website hosted in our Azure App Service using Azure SQL Database.
 
-## Project #1.3 - Deploy CI/CD Pipeline with Github Actions for the Application (60 minutes)
+## Project #1.3 - Deploy CI/CD Pipeline with Github Actions for the Application (45 minutes)
 
 ### Moving the codebase to a GitHub repo
 
@@ -574,7 +574,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
     > To run a CI/CD workflow manually, go to GitHub actions page **(1)** in your repository. Select the workflow **(2)** to run. Open the **Run workflow (3)** menu and select **Run workflow (4)**.
     >
 
-## Project #1.4 - Deploy Serverless to Proceded orders (60 minutes)
+## Project #1.4 - Deploy Serverless to Proceded orders (45 minutes)
 
 1. Connect to your WebVM VM with RDP.
 
