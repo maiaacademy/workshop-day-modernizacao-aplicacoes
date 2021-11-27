@@ -326,7 +326,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
    - **Project name (1)**: Enter DataMigration.
    - **Source server type**: Select SQL Server.
    - **Target server type**: Select Azure SQL Database.
-   - **Choose type of activity**: Select **Offline data migration** and select **Save**.
+   - **Choose type of activity**: Select **Data migration** and select **Save**.
 
 4. Select **Create and run activity (2)**.
 
