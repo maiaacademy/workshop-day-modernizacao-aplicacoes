@@ -317,7 +317,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 
 ### Migrate the Database using the Azure Database Migration Service
 
-1. In the [Azure portal](https://portal.azure.com), navigate to your Azure Database Migration Service by selecting **Resource groups** from the Azure services list, selecting the **RG-MAC-AppModern** resource group, and then selecting the **contoso-dms-UniqueId** Azure Database Migration Service in the list of resources.
+1. In the [Azure portal](https://portal.azure.com), navigate to your Azure Database Migration Service by selecting **Resource groups** from the Azure services list, selecting the **RG-MAC-AppModern** resource group, and then selecting the **parts-dms-UniqueId** Azure Database Migration Service in the list of resources.
 
 2. On the Azure Database Migration Service blade, select **+New Migration Project**.
 
