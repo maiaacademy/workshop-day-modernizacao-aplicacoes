@@ -182,7 +182,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
     - Select the **Refresh** button.
     - View the assessed and migrated websites. Keep in mind that you might need to wait for 5 to 10 minutes for results to show up.
 
-## Project #1.2 - Modernization Database (90 minutes)
+## Project #1.2 - Modernization Database (60 minutes)
 
 ### Perform Assessment for Migration to Azure SQL Database
 
