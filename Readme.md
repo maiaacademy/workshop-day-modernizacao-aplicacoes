@@ -4,9 +4,9 @@ Mentoria Arquiteto Cloud - Hands-on Lab
 
 ## Application Modernization
 
-Modernize a Legacy On-premises Application (Aplication, Database and Serverless)
+Modernize a Legacy On-premises Application, including Application, Database and Serverless
 
-**Parts Unlimited's E-Commerce website**
+**Parts Unlimited**
 
    ![Screenshot of the App Modernization](/AllFiles/Images/PartsUnlimited.png)
 
@@ -15,6 +15,8 @@ Modernize a Legacy On-premises Application (Aplication, Database and Serverless)
 - An active Microsoft Azure subscription in preference be Pay-as-you-go or MSDN.
   - **Important:** To complete this lab, you must have sufficient rights within your Azure AD tenant to register resource providers in your Azure Subscription.
 - An active [GitHub Account](https://github.com) in Free or Pay plans.
+
+## Exercise #01 - Deploy Application Architecture (30 minutes)
 
 1. In the [Azure portal](https://portal.azure.com), select **Resource groups** from the Azure services list.
 
@@ -39,8 +41,6 @@ Modernize a Legacy On-premises Application (Aplication, Database and Serverless)
    > If the resource provider is already registered, there is no further action required.
 
 3. It can take a couple of minutes for the registration to complete. Make sure you see the status of **Registered** before moving on. You may need to select **Refresh** to see the updated status.
-
-## Deploy Application Architecture (30 minutes)
 
 1. To run the ARM template deployment, select the **Deploy to Azure** button below, which opens a custom deployment screen in the Azure portal. The resources created by the ARM template include:
 
@@ -90,7 +90,7 @@ Modernize a Legacy On-premises Application (Aplication, Database and Serverless)
 
 > **Note:** The solution provided is only one of many possible, viable approaches.
 
-## Application Modernization (30 minutes)
+## Project #1.1 - Web Application Modernization (60 minutes)
 
 ### Setting up Azure Migrate
 
@@ -182,7 +182,7 @@ Modernize a Legacy On-premises Application (Aplication, Database and Serverless)
     - Select the **Refresh** button.
     - View the assessed and migrated websites. Keep in mind that you might need to wait for 5 to 10 minutes for results to show up.
 
-## Modernization Database (90 minutes)
+## Project #1.2 - Modernization Database (90 minutes)
 
 ### Perform Assessment for Migration to Azure SQL Database
 
@@ -405,7 +405,7 @@ Modernize a Legacy On-premises Application (Aplication, Database and Serverless)
 
 9. Switch to the **Overview (1)** blade, and select **URL (2)** to navigate to the Parts Unlimited website hosted in our Azure App Service using Azure SQL Database.
 
-## Deploy CI/CD Pipeline with Github Actions for the Application (60 minutes)
+## Project #1.3 - Deploy CI/CD Pipeline with Github Actions for the Application (60 minutes)
 
 ### Moving the codebase to a GitHub repo
 
@@ -574,7 +574,7 @@ Modernize a Legacy On-premises Application (Aplication, Database and Serverless)
     > To run a CI/CD workflow manually, go to GitHub actions page **(1)** in your repository. Select the workflow **(2)** to run. Open the **Run workflow (3)** menu and select **Run workflow (4)**.
     >
 
-## Deploy Serverless to Proceded orders (60 minutes)
+## Project #1.4 - Deploy Serverless to Proceded orders (60 minutes)
 
 1. Connect to your WebVM VM with RDP.
 
