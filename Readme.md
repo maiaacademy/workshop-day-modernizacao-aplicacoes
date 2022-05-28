@@ -188,6 +188,8 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 
 1. In the [Azure portal](https://portal.azure.com), navigate to your **SqlServer2008** VM by selecting **Resource groups** from Azure services list, selecting the **PartsUnlimited** resource group, and selecting the **SqlServer2008** VM from the list of resources.
 
+1. Return to your remote desktop session with the SmartHotelHost VM. Open Chrome from the desktop. Access the .NET Framework 4.8 Runtime installation page https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48, then download and install the runtime. The machine will require a reboot after installation. Reconnect to the SmartHotelHost VM after it has rebooted.
+
 2. Launch DMA from the Windows Start menu by typing "data migration" into the search bar and then selecting **Microsoft Data Migration Assistant** in the search results.
 
     > **Note**: If you do not see the migration assistant, install it from the `c:\DataMigrationAssistant.msi` file.
