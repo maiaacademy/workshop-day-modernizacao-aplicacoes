@@ -25,7 +25,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 3. On the Create a resource group **Basics** tab, enter the following:
 
    - **Subscription (1)**: Select the subscription you are using for this hands-on lab.
-   - **Resource group (2)**: Enter **RG-MAC-AppModern** as the name of the new resource group.
+   - **Resource group (2)**: Enter **PartsUnlimited** as the name of the new resource group.
    - **Region (3)**: Select the region you are using for this hands-on lab.
 
 4. Select **Review + Create (4)**.
@@ -68,7 +68,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 2. On the custom deployment screen in the Azure portal, enter the following:
 
    - **Subscription (1)**: Select the subscription you are using for this hands-on lab.
-   - **Resource group (2)**: Select the **RG-MAC-AppModern** resource group from the dropdown list.
+   - **Resource group (2)**: Select the **PartsUnlimited** resource group from the dropdown list.
    - **SQL Server Name**: Accept the default value, **parts**.
 
     > **Note**: The actual name must be globally unique, so a unique string is generated from your Resource Group Id and appended to the name during provisioning.
@@ -80,7 +80,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 
    > **Note**: The deployment of the custom ARM template takes about 30 minutes to complete. If the error indicates an issue with quotas in the region you selected for the resource group, you can delete the resource group, create a new resource group in a different region, and re-run the ARM template, or you can request a quota increase and then manually provision the missing resources.
 
-4. You can monitor the progress of the deployment by navigating to the **RG-MAC-AppModern** resource group in the Azure portal and then selecting **Deployments** from the left-hand menu. The deployment should be named **Microsoft.Template**. Select the deployment item to view the progress of each individual component in the template.
+4. You can monitor the progress of the deployment by navigating to the **PartsUnlimited** resource group in the Azure portal and then selecting **Deployments** from the left-hand menu. The deployment should be named **Microsoft.Template**. Select the deployment item to view the progress of each individual component in the template.
 
 ## Project - Application Modernization
 
@@ -120,7 +120,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 
 ### Migrate Application with App Service Migration Assistant
 
-1. In the [Azure portal](https://portal.azure.com), navigate to your **WebVM** VM by selecting **Resource groups** from Azure services list, selecting the **RG-MAC-AppModern** resource group, and selecting the **WebVM** VM from the list of resources.
+1. In the [Azure portal](https://portal.azure.com), navigate to your **WebVM** VM by selecting **Resource groups** from Azure services list, selecting the **PartsUnlimited** resource group, and selecting the **WebVM** VM from the list of resources.
 
 2. Go back to the Azure Portal. On the WebVM Virtual Machine's **Overview** blade, select **Connect (1)** and **RDP (2)** on the top menu.
 
@@ -186,7 +186,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 
 ### Perform Assessment for Migration to Azure SQL Database
 
-1. In the [Azure portal](https://portal.azure.com), navigate to your **SqlServer2008** VM by selecting **Resource groups** from Azure services list, selecting the **RG-MAC-AppModern** resource group, and selecting the **SqlServer2008** VM from the list of resources.
+1. In the [Azure portal](https://portal.azure.com), navigate to your **SqlServer2008** VM by selecting **Resource groups** from Azure services list, selecting the **PartsUnlimited** resource group, and selecting the **SqlServer2008** VM from the list of resources.
 
 2. Launch DMA from the Windows Start menu by typing "data migration" into the search bar and then selecting **Microsoft Data Migration Assistant** in the search results.
 
@@ -245,7 +245,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 
 ### Retrieve Connection information for SQL Databases
 
-1. In the [Azure portal](https://portal.azure.com), navigate to your **SqlServer2008-ip** resource by selecting **Resource groups** from the Azure services list, selecting the **RG-MAC-AppModern** resource group, and selecting the **SqlServer2008-ip** Public IP address from the list of resources.
+1. In the [Azure portal](https://portal.azure.com), navigate to your **SqlServer2008-ip** resource by selecting **Resource groups** from the Azure services list, selecting the **PartsUnlimited** resource group, and selecting the **SqlServer2008-ip** Public IP address from the list of resources.
 
 2. In the **Overview** blade, select **Copy** to copy the public IP address and paste the value into a text editor, such as Notepad.exe, for later reference.
 
@@ -317,7 +317,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 
 ### Migrate the Database using the Azure Database Migration Service
 
-1. In the [Azure portal](https://portal.azure.com), navigate to your Azure Database Migration Service by selecting **Resource groups** from the Azure services list, selecting the **RG-MAC-AppModern** resource group, and then selecting the **parts-dms-UniqueId** Azure Database Migration Service in the list of resources.
+1. In the [Azure portal](https://portal.azure.com), navigate to your Azure Database Migration Service by selecting **Resource groups** from the Azure services list, selecting the **PartsUnlimited** resource group, and then selecting the **parts-dms-UniqueId** Azure Database Migration Service in the list of resources.
 
 2. On the Azure Database Migration Service blade, select **+New Migration Project**.
 
@@ -382,7 +382,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 
 ### Configure the application connection to SQL Azure Database
 
-1. In the [Azure portal](https://portal.azure.com), navigate to your `parts` SQL Database resource by selecting **Resource groups** from Azure services list, selecting the **RG-MAC-AppModern** resource group, and selecting the `parts` SQL Database from the list of resources.
+1. In the [Azure portal](https://portal.azure.com), navigate to your `parts` SQL Database resource by selecting **Resource groups** from Azure services list, selecting the **PartsUnlimited** resource group, and selecting the `parts` SQL Database from the list of resources.
 
 2. Switch to the **Connection strings (1)** blade, and copy the connection string by selecting the copy button **(2)**.
 
@@ -600,7 +600,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 
 ### Connecting Function App and App Service
 
-1. In the [Azure portal](https://portal.azure.com), navigate to your `parts` Storage Account resource by selecting **Resource groups** from Azure services list, selecting the **RG-MAC-AppModern** resource group, and selecting the `parts{uniquesuffix}` Storage Account from the list of resources.
+1. In the [Azure portal](https://portal.azure.com), navigate to your `parts` Storage Account resource by selecting **Resource groups** from Azure services list, selecting the **PartsUnlimited** resource group, and selecting the `parts{uniquesuffix}` Storage Account from the list of resources.
 
 2. Switch to the **Access keys (1)** blade, and select **Show keys (2)**. Select the copy button for the first connection string **(3)**. Paste the value into a text editor, such as Notepad.exe, for later reference.
 
@@ -665,7 +665,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 
 ### Enable Application Insights on the Function App
 
-1. In the [Azure portal](https://portal.azure.com), navigate to your **Function App** by selecting **Resource groups** from Azure services list, selecting the **RG-MAC-AppModern** resource group, and selecting the **parts-func-{uniquesuffix}** App service from the list of resources.
+1. In the [Azure portal](https://portal.azure.com), navigate to your **Function App** by selecting **Resource groups** from Azure services list, selecting the **PartsUnlimited** resource group, and selecting the **parts-func-{uniquesuffix}** App service from the list of resources.
 
 2. On the Function App blade, select **Application Insights (1)** under Settings from the left-hand menu. On the Application Insights blade, select **Turn on Application Insights (2)**.
 
