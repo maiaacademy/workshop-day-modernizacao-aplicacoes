@@ -61,7 +61,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 - Function App
 - Virtual Network
 
-   <a href ="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FMCW-App-modernization%2Fmain%2FHands-on%20lab%2Flab-files%2FARM-template%2Fazure-deploy.json" target="_blank" title="Deploy to Azure">
+   <a href ="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmaiaacademy%2Fworkshop-day-modernizacao-aplicacoes%2Fmain%2FAllFiles%2FScripts%2Fazure-deploy.json" target="_blank" title="Deploy to Azure">
       <img src="http://azuredeploy.net/deploybutton.png"/>
    </a>
 
