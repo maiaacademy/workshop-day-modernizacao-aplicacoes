@@ -86,7 +86,7 @@ Modernize a Legacy On-premises Application, including Application, Database and 
 
 ## Solution architecture
 
-![This solution diagram includes a high-level overview of the architecture](AllFiles/Images/Architecture-Diagram.png "Solution architecture diagram")
+![This solution diagram includes a high-level overview of the architecture](AllFiles/Images/Final-Architecture-Diagram.png "Solution architecture diagram")
 
 > **Note:** The solution provided is only one of many possible, viable approaches.
 
