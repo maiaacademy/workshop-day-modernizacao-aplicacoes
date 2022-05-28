@@ -363,8 +363,8 @@
                 "reserved": true
             },
             "sku": {
-                "Tier": "Dynamic",
-                "Name": "Y1"
+                "Tier": "Basic",
+                "Name": "B1"
             }
         },
         {
