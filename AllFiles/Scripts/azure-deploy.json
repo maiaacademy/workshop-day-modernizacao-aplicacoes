@@ -363,8 +363,8 @@
                 "reserved": true
             },
             "sku": {
-                "Tier": "ElasticPremium",
-                "Name": "EP1"
+                "Tier": "Dynamic",
+                "Name": "Y1"
             }
         },
         {
